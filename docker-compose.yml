@@ -1,4 +1,12 @@
-version: "3"
+version: "2"
 services:
    node:
-    
+    image: node
+    container_name: nodebasic
+    hostname: Node_Basic
+    ports:
+      - 3000:3000
+    volumes:
+      - /home/danilo/studies/schoolOfNet/cursos/node/nodeBasic:/home/node
+    restart: always
+    command: 'bash'
